@@ -2,7 +2,7 @@
 
 ## What is Pizza Clicker?
 
-**Pizza Clicker** is a clicker game based off of the popular mobile and steam game, _Cookie Clicker_. Build up your Pizza Empire and rise above your competition!
+**Pizza Clicker** is a clicker game based off of the popular web and steam game, _Cookie Clicker_. Build up your Pizza Empire and rise above your competition!
 
 ![Preview of the Game](./img/markdown/md-preview--main.jpg "Pizza Clicker in action!")
 
@@ -24,6 +24,8 @@
 - The price currency of the upgrades is determined by your **total pizzas**.
 
 ### Story
+
+![Preview of Story Cutcene](./img/markdown/md-preview--story.jpg "Story Cutscene Example")
 
 Cutscenes will appear at certain points throughout the game. They are triggered if the **total amount of pizzas earned** _(not the total you currently have)_ at certain points.
 
