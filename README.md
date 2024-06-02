@@ -31,6 +31,6 @@ Cutscenes will appear at certain points throughout the game. They are triggered 
 
 Progress through the the story to see what Calithas has to say. Calithas will just generally talk to you and update you on how you are doing.
 
-## <span style="color: red">**IMPORTANT NOTE**</span>
+## **IMPORTANT NOTE**<
 
-This game is my first real vanilla _HTML, CSS and JavaScript_ Project. There are many bugs that will appear after you reach a certain amount of pizza. <span style="color: red"> This game is not finished and there will be issues.</span>
+There are many bugs that will appear after you reach a certain amount of pizza. This game is not finished and there will be issues.
