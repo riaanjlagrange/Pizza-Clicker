@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Remix Icons Pack -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Title -->
+    <title>Pizza Clicker</title>
+  </head>
+  <body>
+    <!-- Story Popup -->
+    <div class="story hidden">
+      <div class="backdrop"></div>
+      <div class="story-panel">
+        <div class="character">
+          <img src="./img/char.png" alt="char" />
+        </div>
+        <div class="name-panel">Calithas</div>
+        <div class="text-panel"></div>
+      </div>
+    </div>
+
+    <!-- How to Play Popup -->
+    <div class="desc-box">
+      <div class="backdrop"></div>
+      <div class="desc-box-box">
+        <div class="close-button">x</div>
+        <div class="desc-info">
+          <div class="desc-title">How to play</div>
+          <div class="desc-details">
+            Click the pizza. As simple as that. You can buy upgrades to increase
+            pizza production. Upgrades affect the value of your click as well as
+            increased auto clicking.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Statistics Popup -->
+    <div class="stats-box hidden">
+      <div class="backdrop"></div>
+      <div class="stats-box-box">
+        <div class="close-button">x</div>
+        <div class="stats-info">
+          <div class="stats-title">Statistics</div>
+          <ul class="stats-details"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Golden Pizza -->
+    <div class="golden-pizza hidden">
+      <img src="./img/golden-pizza.png" alt="golden-pizza" />
+    </div>
+
+    <!-- Background Container -->
+    <div class="bg">
+      <div class="blur"></div>
+      <!-- Typing Container -->
+      <div class="typing-container">
+        <h1 class="typing-text" id="typingText"></h1>
+      </div>
+      <div class="container">
+        <!-- Buttons -->
+        <div class="buttons">
+          <!-- Mute Button -->
+          <div class="mute-button btn">
+            <img id="mute-img" src="./img/mute.png" alt="volume" />
+          </div>
+          <!-- Info Button -->
+          <div class="info-button btn">
+            <img id="info-img" src="./img/info.png" alt="info" />
+          </div>
+          <!-- Stats Button -->
+          <div class="stats-button btn">
+            <img id="stats-img" src="./img/stats.png" alt="info" />
+          </div>
+        </div>
+        <!-- Clicker Side -->
+        <div class="clicker-side">
+          <!-- Clicker Element -->
+          <div class="clicker">
+            <img id="pizza" src="img/pizza.png" alt="Pizza" />
+            <div id="live-clicks"></div>
+          </div>
+          <!-- CPS (Clicks Per Second) Display -->
+          <div class="cps"></div>
+          <!-- Clicker Counter Display -->
+          <div class="clicker-counter"></div>
+        </div>
+        <!-- Upgrade Side -->
+        <div class="upgrade-side">
+          <!-- Upgrade Info -->
+          <div class="info">
+            <div class="info-title">Upgrades</div>
+            <div class="info-description">
+              Buy upgrades to increase pizza production.
+            </div>
+          </div>
+          <!-- Upgrade Items -->
+          <div class="upgrades"></div>
+        </div>
+      </div>
+    </div>
+    <!-- !!UPDATED: NOSCRIPT TAG IMPLEMENTED!! -->
+    <noscript>Javascript has been disabled</noscript>
+    <!-- External Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,461 @@
+/* Reset CSS */
+/* Box model */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+.body {
+  position: relative;
+}
+
+/* Font */
+html {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Blur Background */
+.blur {
+  background-image: url("img/bg.png");
+  background-size: cover;
+  filter: blur(5px);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+/* Backdrop */
+.backdrop {
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.808);
+  position: absolute;
+}
+
+/* Description Box */
+.desc-box {
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Statistics Box */
+.stats-box {
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Description Box Inner */
+.desc-box-box {
+  z-index: 15;
+  width: 30vw;
+  height: 30vh;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 15px;
+  position: relative;
+}
+
+/* Statistics Box Inner */
+.stats-box-box {
+  z-index: 15;
+  width: 30vw;
+  height: 60vh;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 15px;
+  position: relative;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
+}
+
+/* Description Info */
+.desc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Statistics Info */
+.stats-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Description Title */
+.desc-title {
+  font-size: 1.5rem;
+}
+
+/* Statistics Title */
+.stats-title {
+  font-size: 1.5rem;
+}
+
+/* Description Details */
+.desc-details {
+  line-height: 1.5;
+  font-size: 0.8rem;
+}
+
+/* Statistics Details */
+.stats-details {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 3rem;
+  line-height: 1.8;
+}
+
+/* Container */
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  position: relative;
+  height: 100vh;
+}
+
+/* Buttons */
+.buttons {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Button */
+.btn {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  height: 43px;
+  width: 43px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover */
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.534);
+  transform: scale(1.1);
+}
+
+/* Button Image */
+.btn img {
+  height: 2rem;
+}
+
+/* Clicker Side */
+.clicker-side {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.336);
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+}
+
+/* CPS */
+.cps {
+  font-size: 1.3rem;
+  /* box-shadow: 0 0 100rem 1rem rgb(255, 255, 255); */
+  color: white;
+  /* background-color: rgba(255, 255, 255, 0.507); */
+  /* border-radius: 15px; */
+  padding: 15px;
+  background-color: #e02a2ab6;
+  box-shadow: 5px 5px 0 0 rgba(255, 123, 0, 0.74);
+}
+
+/* Clicker Counter */
+.clicker-counter {
+  font-size: 1.5rem;
+  margin-bottom: 8rem;
+  /* box-shadow: 0 0 10rem 0.01rem rgb(255, 255, 255); */
+  color: white;
+  /* background-color: rgba(255, 255, 255, 0.507); */
+  /* border-radius: 15px; */
+  padding: 15px;
+  background-color: #dd3f00b6;
+  box-shadow: 5px 5px 0 0 rgba(255, 187, 0, 0.616);
+}
+
+/* Clicker Image */
+.clicker img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  position: relative;
+  animation-name: spin;
+  animation-duration: 50000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 10rem 2rem rgba(80, 16, 0, 0.342);
+}
+
+/* Scaled Clicker */
+.scaled-clicker {
+  transform: translateY(-1rem) !important;
+  transform: scale(1.1) !important;
+}
+
+/* Spin Animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Clicker Transition */
+.clicker {
+  transition: all 0.5s ease;
+  transform: scale(1);
+  margin-top: 8rem;
+}
+
+/* Clicker Hover */
+.clicker:hover {
+  transform: scale(1.03) perspective(1px);
+}
+
+/* Live Clicks Display */
+#live-clicks {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-size: 1.5rem;
+  right: -13rem;
+  bottom: 15rem;
+  padding: 5px;
+  border-radius: 15px;
+  transform: rotate(-6deg);
+}
+
+/* Golden Pizza */
+.golden-pizza {
+  z-index: 20;
+  position: absolute;
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  box-shadow: 0 0 100px black;
+  box-shadow: 0 0 100px rgb(255, 237, 76);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Golden Pizza Image */
+.golden-pizza img {
+  height: 6rem;
+}
+
+/* Upgrade Side */
+.upgrade-side {
+  background-color: rgba(24, 8, 0, 0.747);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Info */
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+/* Info Title */
+.info-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+/* Info Description */
+.info-description {
+  line-height: 2;
+  color: rgb(255, 255, 255);
+}
+
+/* Upgrades */
+.upgrades {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  transition: all 0.5s ease;
+}
+
+/* Greyed Upgrade Item */
+#upgrade-item-greyed {
+  background-color: rgba(255, 255, 255, 0.295);
+  cursor: default;
+}
+
+/* Upgrade Item */
+.upgrade-item {
+  background-color: rgba(0, 0, 0, 0.699);
+  color: white;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border: 3px solid transparent;
+}
+
+/* Upgrade Item Hover */
+.upgrade-item:hover {
+  border: 3px solid white;
+}
+
+/* Info Side */
+.info-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Total Side */
+.total-side {
+  display: flex;
+}
+
+/* STORY PANELS */
+
+/* Story Panel */
+.story-panel {
+  position: relative;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Name Panel */
+.name-panel {
+  z-index: 16;
+  position: absolute;
+  background-color: rgb(26, 26, 26);
+  width: 15rem;
+  height: 5rem;
+  bottom: 12.4rem;
+  right: 33rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  color: darkred;
+  border: 5px solid black;
+}
+
+/* Character Panel */
+.character {
+  z-index: 14;
+  position: absolute;
+  right: 17rem;
+  bottom: 9rem;
+}
+
+/* Character Image */
+.character img {
+  height: 30rem;
+}
+
+/* Text Panel */
+.text-panel {
+  z-index: 15;
+  position: absolute;
+  background-color: rgb(189, 189, 189);
+  width: 80vw;
+  height: 20vh;
+  bottom: 0rem;
+  right: 14rem;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 50px;
+  border: 5px solid black;
+  font-size: 1rem;
+  line-height: 2.2;
+}
+
+.bg {
+  position: relative;
+}
+
+.typing-container {
+  text-align: center;
+  position: absolute;
+  top: 90%;
+  display: flex;
+  margin-left: 1%;
+  width: 73%;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  background-color: #e9710056;
+  min-height: 3rem;
+  box-shadow: 5px 5px 0 0 rgba(255, 187, 0, 0.377);
+}
+
+.typing-text {
+  color: #ffffffd7;
+  font-size: 1.7rem;
+  font-weight: 700;
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
