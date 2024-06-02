@@ -31,6 +31,6 @@ Cutscenes will appear at certain points throughout the game. They are triggered 
 
 Progress through the the story to see what Calithas has to say. Calithas will just generally talk to you and update you on how you are doing.
 
-## **IMPORTANT NOTE**<
+## **IMPORTANT NOTE**
 
 There are many bugs that will appear after you reach a certain amount of pizza. This game is not finished and there will be issues.
